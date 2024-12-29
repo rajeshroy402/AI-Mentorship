@@ -77,9 +77,11 @@ The following example demonstrates the usage of YOLOv8 commands:
 ```bash
 %cd {HOME}
 !yolo task=detect mode=predict model=yolov8l.pt conf=0.7 source='https://media.roboflow.com/notebooks/examples/dog.jpeg' save=True
+
+Image(filename='runs/detect/predict12/dog.jpeg', height=600)
 ```
 
-**Explanation:** This runs the YOLOv8 model in prediction mode using the pre-trained `yolov8l.pt` model. The confidence threshold is set to `0.7`, and the image source is a URL. The prediction results are saved in the specified directory.
+**Explanation:** This runs the YOLOv8 model in prediction mode using the pre-trained `yolov8l.pt` model. The confidence threshold is set to `0.7`, and the image source is a URL. The prediction results are saved in the specified directory and displayed as an image.
 
 #### Classification
 ```bash
